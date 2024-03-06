@@ -28,15 +28,15 @@ print("List of Books:")
 for book in books_list:
     print(book)
 
-    # remove a book
-    remove_title = input("Enter the title of the book to remove or else enter to skip: ")
-    if remove_title in books_list:
-        remove_author = books_dict[remove_title]
-        books_list.remove(remove_title)
-        authors_set.remove(remove_author)
-        del books_dict[remove_title]
-        print("Books removed successfully!'")
-        print("Books available: ", books_list)
+# remove a book
+remove_title = input("Enter the title of the book to remove or else enter to skip: ")
+if remove_title in books_list:
+    remove_author = books_dict[remove_title]
+    books_list.remove(remove_title)
+    authors_set.remove(remove_author)
+    del books_dict[remove_title]
+    print("Books removed successfully!'")
+    print("Books available: ", books_list)
 
-    else:
-        print("Book not found")
+else:
+    print("Book not found")
